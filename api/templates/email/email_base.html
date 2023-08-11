@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+{% load  static %}
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta property="og:site_name" content="E-cession" />
+    <meta property="og:title" content="Email: The Conditions Precedent Have Been Lifted" />
+    <meta property="og:type" content="website" />
+    <meta
+    property="og:description"
+    content=""
+    />
+    <meta
+    name="keywords"
+    content=""
+    />
+    <meta name="twitter:title" content="Email: The Conditions Precedent Have Been Lifted" />
+    <meta name="twitter:card" content="summary" />
+    <meta
+    name="twitter:description"
+    content=""
+    />
+    <meta
+    name="description"
+    content=""
+    />
+    <title>Email: The Conditions Precedent Have Been Lifted</title>
+    <!--<link rel="icon" type="image/png" href="{% static 'images/easy-cession-favicon.png' %}" />-->
+    <!--<link href="{% static 'css/normalize.css' %}" rel="stylesheet">-->
+    <!--<link href="{% static 'css/styles.css' %}" rel="stylesheet">-->
+    <style>
+      .email-wrapper {
+  margin: 0 auto;
+  max-width: 598px;
+  padding: 0 24px;
+}
+
+.email-group {
+  max-width: 550px;
+  border-radius: 0 0 18px 18px;
+  background-color: #FFFFFF;
+  margin: 50px auto 30px auto;
+}
+
+.email-group .email-header {
+  height: 120px;
+  border-radius: 18px 18px 0 0;
+  background-color: #080033;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.email-body {
+  padding: 48px 36px;
+}
+
+.email-body .email-text p {
+  color: #080033;
+  font-family: Poppins;
+  font-size: 15px;
+  letter-spacing: 0;
+  line-height: 21px;
+}
+
+.email-body .email-text p .bold {
+  font-weight: 600;
+}
+
+.email-body .email-text .important-msg .bold {
+  font-weight: 600;
+}
+
+.email-body .email-text .email-btn {
+  margin: 30px 0 35px 0;
+}
+
+.email-body .email-text .email-btn a {
+  text-decoration: none;
+  border-radius: 8px;
+  background-color: #0055DF;
+  color: #FFFFFF;
+  font-family: Poppins;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 20px;
+  text-align: center;
+  padding: 12px 60px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.email-body .email-text .email-btn a:hover {
+  background-color: #0046B7;
+}
+
+.email-body .email-text .regards-msg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.email-body .email-text .regards-msg span {
+  color: #080033;
+  font-family: Poppins;
+  font-size: 15px;
+  letter-spacing: 0;
+  line-height: 21px;
+}
+
+.email-body .email-text .email-desposit-tax .cp-price-list {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px dashed rgba(8, 0, 51, 0.3);
+}
+
+.email-body .email-text .email-desposit-tax .cp-price-list span {
+  color: #080033;
+  font-family: Poppins;
+  font-size: 13px;
+  letter-spacing: 0;
+  line-height: 21px;
+  padding: 6px 0;
+}
+
+.email-body .email-text .email-desposit-tax .cp-price-list:last-child {
+  border-bottom: none;
+}
+
+.email-body .email-text .email-desposit-tax .cp-price-list:first-child span {
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.email-footer {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.email-footer .copyrights-text p {
+  color: #080033;
+  font-family: Poppins;
+  font-size: 12px;
+  letter-spacing: 0;
+  line-height: 18px;
+  text-align: center;
+  margin: 18px 0;
+}
+
+.email-footer .address p {
+  width: 151px;
+  color: #080033;
+  font-family: Poppins;
+  font-size: 12px;
+  letter-spacing: 0;
+  line-height: 18px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.email-footer .unsubscribe-text p {
+  color: rgba(8, 0, 51, 0.5);
+  font-family: Poppins;
+  font-size: 12px;
+  letter-spacing: 0;
+  line-height: 18px;
+  text-align: center;
+  margin-top: 18px;
+}
+
+.email-footer .unsubscribe-text p a {
+  text-decoration: none;
+  color: rgba(8, 0, 51, 0.5);
+  border-bottom: 1px solid rgba(8, 0, 51, 0.5);
+}
+
+.email-identifiers-points ul p {
+  color: #0B0036;
+  font-family: Poppins;
+  font-size: 15px;
+  letter-spacing: 0;
+  line-height: 21px;
+  margin-bottom: 3px;
+}
+
+.email-identifiers-points ul li {
+  list-style: none;
+  font-family: Poppins;
+  font-size: 15px;
+  letter-spacing: 0;
+  line-height: 21px;
+}
+
+.email-identifiers-points ul li .bold {
+  font-weight: 600;
+}
+
+.email-identifiers-points ul li a {
+  text-decoration: none;
+  color: #0055DF;
+}
+
+.email-broder-btn {
+  margin: 20px 0 35px 0;
+}
+
+.email-broder-btn a {
+  text-decoration: none;
+  border-radius: 8px;
+  background-color: #ffffff;
+  border: 1px solid rgba(6, 0, 74, 0.3);
+  color: #06004A;
+  font-family: Poppins;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 20px;
+  padding: 12px 50px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.email-broder-btn a:hover {
+  background-color: #0046B7;
+  color: #fff;
+}
+
+
+
+
+
+@media only screen and (max-width: 480px){
+  .email-body .email-text .email-btn a {
+    padding: 12px 30px;
+  }
+  .email-body {
+    padding: 42px 18px;
+  }
+  .email-body .email-text p {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .email-identifiers-points ul li, .email-body .email-text .regards-msg span, .hello-greeetings {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .email-body .email-text .email-btn a {
+    font-size: 11px;
+  }
+}
+    </style>
+  </head>
+  <body>
+
+    <div class="email-wrapper">
+      <div class="email-group">
+        <header class="email-header">
+          <!--<img src="{% static 'images/logo.png' %}" alt="">-->
+        </header>
+
+      </div>
+
+  {% block content %}
+
+  {% endblock %}
+    <div class="email-footer">
+<!--        <div class="email-footer-logo">-->
+<!--          <img src="{% static 'images/email-logo.svg' %}" alt="">-->
+<!--        </div>-->
+<!--        <div class="copyrights-text">-->
+<!--          <p>© 2020 E-cession, SAS</p>-->
+<!--        </div>-->
+<!--        <div class="address">-->
+<!--          <p>20 rue générale de gaulle-->
+<!--            94440 Marolle-en-Brie-->
+<!--            France</p>-->
+<!--        </div>-->
+<!--        <div class="unsubscribe-text">-->
+<!--          <p>Vous ne voulez pas les recevoir? <a href="">Se désabonner</a></p>-->
+<!--        </div>-->
+      </div>
+    </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+  </body>
+</html>
